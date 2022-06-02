@@ -8,3 +8,5 @@ I redid the printing task code onto the script and am continuously saving the mo
 fun fact it does, so now it went from 0 to 2
 retyping the testing code of python ../course/set1/tests.py into the terminal to see if it'll work. it does
 I redid the git configs for my email and name but the source changes are still 2
+I've now realised that the number of changes in the source control being 2 didn't really matter, as long as it contains the correct modifications so there isn't an issue anymore
+I can understand that the process involves modifying the code or script in certain files, saving, adding the changes into stage changes, commiting through the tick symbol, pushing the committed staged changes, and then finally testing to see if I passed.
