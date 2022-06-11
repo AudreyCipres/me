@@ -69,7 +69,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
+    star_list=[]
+    for i in range(10):
+        star_list.append("*")
+    return star_list
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -82,7 +85,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    return None
+    pound_list=[]
+    for i in range(number_of_items):
+        pound_list.append(symbol)
+    return pound_list
 
 
 def loops_2():
@@ -103,7 +109,13 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    star_square=[]
+    for k in range(10):
+        star_list=[]
+        for i in range(10):
+            star_list.append("*")
+        star_square.append(star_list)
+    return star_square
 
 
 def loops_3():
