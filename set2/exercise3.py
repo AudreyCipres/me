@@ -139,7 +139,13 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    number_square=[]
+    for j in range(10):
+        number_row=[]
+        for i in range(10):
+            number_row.append(str(j))
+        number_square.append(number_row)
+    return number_square
 
 
 def loops_4():
@@ -159,7 +165,14 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    number_square=[]
+    for j in range(10):
+        number_row=[]
+        for i in range(10):
+            number_row.append(str(i))
+        number_square.append(number_row)
+    return number_square
+
 
 
 def loops_5():

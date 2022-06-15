@@ -9,3 +9,4 @@ Line 28, if there are more than 3 values in the list then it'll print the follow
 "platform.uname" unveils the underlying features of the platform or device in a namedtuple() through 6 attributes
 Tuples = used to store items in a single variable, e.g. n = (5, 8, 10,15) is a 4-tuple
 bool(x) creates a Boolean that classifies x as TRUE and if else then FALSE
+x.append, when done on a variable under a certain range, creates a list that adds on similar items to the first value (e.g. [0, 1, 2, 3, 4, 5])
