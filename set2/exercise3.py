@@ -202,7 +202,13 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    coord_square=[]
+    for j in range(5):
+        coord_row=[]
+        for i in range(10):
+            coord_row.append("(i" + str (i) + ", j" + str(j) + ")")
+        coord_square.append(coord_row)
+    return coord_square
 
 
 def loops_6():
@@ -225,7 +231,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    number_wedge=[]
+    for i in range(10):
+        number_row=[]
+        for j in range(i+1):
+            number_row.append(str(j))
+        number_wedge.append(number_row)
+    return number_wedge
 
 
 def loops_7():
