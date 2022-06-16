@@ -5,6 +5,7 @@ Modify each function until the tests pass.
 """
 
 
+from email import message
 from re import I
 from matplotlib.pyplot import step
 
@@ -22,8 +23,7 @@ def loop_ranger(start, stop=None, step=1):
     with just the range function, but we'd like you to do it the long way.
     """
     my_range=[]
-    i=start
-    while i+1 < stop:
+    for i in range(start, stop, step):
         my_range.append(i)
     return my_range
     
@@ -51,7 +51,15 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
-     
+    msg=f"Give a number between {low}, and {high}:"
+    while True:
+        number_input=int(input(msg))
+        if low<number_input<high:
+            print(f"Thank you")
+            return number_input
+        else:
+            print(f"{number_input} isn't between {low}, and {high}")
+
 
 
 
