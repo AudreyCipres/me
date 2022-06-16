@@ -5,6 +5,10 @@ Modify each function until the tests pass.
 """
 
 
+from re import I
+from matplotlib.pyplot import step
+
+
 def loop_ranger(start, stop=None, step=1):
     """Return a list of numbers between start and stop in steps of step.
 
@@ -17,7 +21,12 @@ def loop_ranger(start, stop=None, step=1):
     Look up for how range() works in the python docs. You could  answer this
     with just the range function, but we'd like you to do it the long way.
     """
-    return None
+    my_range=[]
+    i=start
+    while i+1 < stop:
+        my_range.append(i)
+    return my_range
+    
 
 
 def two_step_ranger(start, stop):
@@ -28,7 +37,10 @@ def two_step_ranger(start, stop):
 
     You can either reuse loop_ranger, or the range function that in the standard library
     """
-    return None
+    my_range=[]
+    for i in range(start, stop, 2):
+        my_range.append(i)
+    return my_range
 
 
 def stubborn_asker(low, high):
@@ -39,7 +51,9 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
-    return None
+     
+
+
 
 
 def not_number_rejector(message):
