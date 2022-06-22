@@ -54,7 +54,7 @@ def advancedGuessingGame():
       else:
         print("Too big, try again")
     except Exception as e:
-      print(f"{guessedNumber} is not valid, try again")
+      print("That is not valid, try again")
   return "You got it!"
     # the tests are looking for the exact string "You got it!". Don't modify that!
 
