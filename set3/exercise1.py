@@ -5,9 +5,11 @@ Modify each function until the tests pass.
 """
 
 
+from ast import While
 from email import message
 from re import I
 from matplotlib.pyplot import step
+from openpyxl import load_workbook
 
 
 def loop_ranger(start, stop=None, step=1):
@@ -71,7 +73,15 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    return None
+    msg=f"Give me a number:"
+    while True:
+        try:
+            user_input=int(input(msg))
+            print(f"Thank you!")
+            return user_input
+        except Exception as e:
+            print(f"uhh try again?")
+        
 
 
 def super_asker(low, high):
@@ -80,7 +90,19 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
-    return None
+    while True:
+        msg = input(f"Give me a number between {low} and {high}:")
+        try:
+            num=int(msg)
+            if low<num<high:
+                print(f"Thank you")
+                return num
+            else:
+                print(f"{num} is not between {low} and {high}")
+        except Exception as e:
+            print(f"uhh could you try that again")
+
+
 
 
 if __name__ == "__main__":
