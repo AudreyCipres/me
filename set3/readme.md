@@ -10,3 +10,7 @@ i=6
 while i<6:
     print (i)
     i += 1
+input function allows user input after a prompt parameter (a string that represents a default message before input)
+e.g:
+x=input(f"Enter your name:")
+print (f"Hello, " + x)
