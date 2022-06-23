@@ -28,36 +28,66 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
+
+def stubborn_asker(low, high):
+    msg=f"Give a number between {low}, and {high}:"
+    while True:
+        number_input=int(input(msg))
+        if low<number_input<high:
+            print(f"Thank you")
+            return number_input
+        else:
+            print(f"{number_input} isn't between {low}, and {high}")
+
+def not_number_rejector(message):
+    while True:
+        try:
+            user_input=int(input(message))
+            print("Thank you!")
+            return user_input
+        except Exception as e:
+            print("uhh try again?")
+
+
+def super_asker(low, high):
+    while True:
+        msg = input(f"Give me a number between {low} and {high}:")
+        try:
+            num=int(msg)
+            if low<num<high:
+                print(f"Thank you")
+                return num
+            else:
+                print(f"{num} is not between {low} and {high}")
+        except Exception as e:
+            print(f"uhh could you try that again")    
   
 def advancedGuessingGame():
   print("\nWelcome to the number guessing game!")
-  print("A number between _ and 100?")
-  lowerBound = input("Enter a lower bound: ")
-  print(f"OK then, a number between {lowerBound} and 100 ?")
-  lowerBound=int(lowerBound)
+  print("A number between _ and _?")
+  print("Enter an upper bound")
+  upperBound = super_asker(0, 100)
+  print("Enter an lower bound")
+  lowerBound = super_asker(0, upperBound-1)
+  print(f"OK then, a number between {lowerBound} and {upperBound} ?")
 
-  actualNumber = random.randint(lowerBound, 100)
+  actualNumber = random.randint(lowerBound, upperBound)
 
   guessed = False
 
-  while not guessed: 
-    try:
-      guessedNumber = int(input("Guess a number: "))
+  while not guessed:
+      guessedNumber = not_number_rejector("Guess a number:")
       print(f"You guessed {guessedNumber}")
       if guessedNumber == actualNumber:
         print(f"You got it! It was {actualNumber}")
         guessed = True
-      elif guessedNumber < lowerBound :
-        print(f"that's lower than {lowerBound}")
       elif guessedNumber < actualNumber:
         print("Too small, try again")
       else:
         print("Too big, try again")
-    except Exception as e:
-      print("That is not valid, try again")
   return "You got it!"
     # the tests are looking for the exact string "You got it!". Don't modify that!
 
 
 if __name__ == "__main__":
-    advancedGuessingGame()
+    print(advancedGuessingGame())
