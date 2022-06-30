@@ -29,16 +29,6 @@ def advancedGuessingGame():
     purpose if you can!
     """
 
-def stubborn_asker(low, high):
-    msg=f"Give a number between {low}, and {high}:"
-    while True:
-        number_input=int(input(msg))
-        if low<number_input<high:
-            print(f"Thank you")
-            return number_input
-        else:
-            print(f"{number_input} isn't between {low}, and {high}")
-
 def not_number_rejector(message):
     while True:
         try:
