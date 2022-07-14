@@ -3,6 +3,7 @@
 Steps on the way to making your own guessing game.
 """
 
+from email import message
 import random
 
 
@@ -57,10 +58,26 @@ def super_asker(low, high):
 def advancedGuessingGame():
     print("\nWelcome to the number guessing game!")
     print("Guess a number between _ and _?")
-    print("Enter an upper bound")
-    upperBound = super_asker(0, 100)
-    print("Enter an lower bound")
-    lowerBound = super_asker(0, upperBound - 1)
+    while True:
+        try:
+            lowerBound = int(input("Enter a lower bound: "))
+            print("Thank you")
+            break
+        except ValueError:
+            print("try again")
+    upperBound = input(f"Enter an upper bound: ")
+    while True:
+        try:
+            upperBound = int(input("Enter an upper bound: "))
+            if lowerBound < upperBound:
+                print("Thank you")
+            else:
+                print(f"{upperBound} is not higher than {lowerBound}")
+                notAnInteger = int("a")
+            break
+        except ValueError:
+            print(f"uhh try again?")
+
     print(f"OK then, a number between {lowerBound} and {upperBound} ?")
 
     actualNumber = random.randint(lowerBound, upperBound)
@@ -77,7 +94,7 @@ def advancedGuessingGame():
             print("Too small, try again")
         else:
             print("Too big, try again")
-    return "Wanna play again?"
+    return "wanna play again?"
     # the tests are looking for the exact string "You got it!". Don't modify that!
 
 

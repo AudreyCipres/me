@@ -17,9 +17,7 @@ def is_odd(a_number):
 
     So if a_number modulo two is zero, then it's even.
     """
-    return bool(a_number%2 != 0)
-   
-
+    return bool(a_number % 2 != 0)
 
 
 def fix_it(moves=True, should_move=True):
@@ -49,6 +47,7 @@ def fix_it(moves=True, should_move=True):
         Value = "Something's not right here mate, looks expensive"
     return Value
 
+
 def loops_preview():
     """Make 8 poops.
 
@@ -69,7 +68,7 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    star_list=[]
+    star_list = []
     for i in range(10):
         star_list.append("*")
     return star_list
@@ -85,7 +84,7 @@ def loops_1c(number_of_items=5, symbol="#"):
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    pound_list=[]
+    pound_list = []
     for i in range(number_of_items):
         pound_list.append(symbol)
     return pound_list
@@ -109,9 +108,9 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    star_square=[]
+    star_square = []
     for k in range(10):
-        star_list=[]
+        star_list = []
         for i in range(10):
             star_list.append("*")
         star_square.append(star_list)
@@ -139,9 +138,9 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    number_square=[]
+    number_square = []
     for j in range(10):
-        number_row=[]
+        number_row = []
         for i in range(10):
             number_row.append(str(j))
         number_square.append(number_row)
@@ -165,14 +164,13 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    number_square=[]
+    number_square = []
     for j in range(10):
-        number_row=[]
+        number_row = []
         for i in range(10):
             number_row.append(str(i))
         number_square.append(number_row)
     return number_square
-
 
 
 def loops_5():
@@ -202,11 +200,11 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    coord_square=[]
+    coord_square = []
     for j in range(5):
-        coord_row=[]
+        coord_row = []
         for i in range(10):
-            coord_row.append("(i" + str (i) + ", j" + str(j) + ")")
+            coord_row.append("(i" + str(i) + ", j" + str(j) + ")")
         coord_square.append(coord_row)
     return coord_square
 
@@ -231,10 +229,10 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    number_wedge=[]
+    number_wedge = []
     for i in range(10):
-        number_row=[]
-        for j in range(i+1):
+        number_row = []
+        for j in range(i + 1):
             number_row.append(str(j))
         number_wedge.append(number_row)
     return number_wedge
@@ -261,6 +259,7 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
+
     return None
 
 

@@ -47,7 +47,7 @@ def wordy_pyramid():
         else:
             print("failed a request", r.status_code, i)
 
-    return pyramid_list
+    return pyramid_list[]
 
 
 def get_a_word_of_length_n(length):

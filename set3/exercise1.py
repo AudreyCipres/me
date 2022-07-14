@@ -24,11 +24,10 @@ def loop_ranger(start, stop=None, step=1):
     Look up for how range() works in the python docs. You could  answer this
     with just the range function, but we'd like you to do it the long way.
     """
-    my_range=[]
+    my_range = []
     for i in range(start, stop, step):
         my_range.append(i)
     return my_range
-    
 
 
 def two_step_ranger(start, stop):
@@ -39,7 +38,7 @@ def two_step_ranger(start, stop):
 
     You can either reuse loop_ranger, or the range function that in the standard library
     """
-    my_range=[]
+    my_range = []
     for i in range(start, stop, 2):
         my_range.append(i)
     return my_range
@@ -53,17 +52,14 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
-    msg=f"Give a number between {low}, and {high}:"
+    msg = f"Give a number between {low}, and {high}:"
     while True:
-        number_input=int(input(msg))
-        if low<number_input<high:
+        number_input = int(input(msg))
+        if low < number_input < high:
             print(f"Thank you")
             return number_input
         else:
             print(f"{number_input} isn't between {low}, and {high}")
-
-
-
 
 
 def not_number_rejector(message):
@@ -73,15 +69,14 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    msg=f"Give me a number:"
+    msg = f"Give me a number:"
     while True:
         try:
-            user_input=int(input(msg))
+            user_input = int(input(msg))
             print(f"Thank you!")
             return user_input
         except Exception as e:
             print(f"uhh try again?")
-        
 
 
 def super_asker(low, high):
@@ -93,16 +88,14 @@ def super_asker(low, high):
     while True:
         msg = input(f"Give me a number between {low} and {high}:")
         try:
-            num=int(msg)
-            if low<num<high:
+            num = int(msg)
+            if low < num < high:
                 print(f"Thank you")
                 return num
             else:
                 print(f"{num} is not between {low} and {high}")
         except Exception as e:
             print(f"uhh could you try that again")
-
-
 
 
 if __name__ == "__main__":
