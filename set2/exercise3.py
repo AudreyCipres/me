@@ -204,7 +204,7 @@ def loops_5():
     for j in range(5):
         coord_row = []
         for i in range(10):
-            coord_row.append("(i" + str(i) + ", j" + str(j) + ")")
+            coord_row.append(" (i" + str(i) + ", j" + str(j) + ")")
         coord_square.append(coord_row)
     return coord_square
 
@@ -259,8 +259,19 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-
-    return None
+    pyramid_case = []
+    for i in range(5):
+        pyramid_innards = []
+        for j in range(4 - i):
+            pyramid_innards.append(" ")
+        for j in range(1 + i):
+            pyramid_innards.append("*")
+        for j in range(0 + i):
+            pyramid_innards.append("*")
+        for j in range(4 - i):
+            pyramid_innards.append(" ")
+        pyramid_case.append(pyramid_innards)
+    return pyramid_case
 
 
 def little_printer(some_kind_of_list, exercise_name):
