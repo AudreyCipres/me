@@ -65,7 +65,6 @@ def advancedGuessingGame():
             break
         except ValueError:
             print("try again")
-    upperBound = input(f"Enter an upper bound: ")
     while True:
         try:
             upperBound = int(input("Enter an upper bound: "))
@@ -73,7 +72,6 @@ def advancedGuessingGame():
                 print("Thank you")
             else:
                 print(f"{upperBound} is not higher than {lowerBound}")
-                notAnInteger = int("a")
             break
         except ValueError:
             print(f"uhh try again?")
@@ -88,7 +86,7 @@ def advancedGuessingGame():
         guessedNumber = not_number_rejector("Guess a number:")
         print(f"You guessed {guessedNumber}")
         if guessedNumber == actualNumber:
-            print(f"You got it! It was {actualNumber}")
+            print(f"Yes! It was {actualNumber} :D")
             guessed = True
         elif guessedNumber < actualNumber:
             print("Too small, try again")
