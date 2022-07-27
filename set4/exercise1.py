@@ -155,7 +155,11 @@ def diarist():
 
     NOTE: this function doesn't return anything. It has the _side effect_ of modifying the file system
     """
-    r = open("set4/Trispokedovetiles(laser)", "r", encoding="utf-8")
+    r = open(
+        r"C:/Users/audre/Desktop/CD1161/me/set4/Trispokedovetiles(laser).gcode",
+        "r",
+        encoding="utf-8",
+    )
     OnCount = 0
     OffCount = 0
     for line in r.readlines():
