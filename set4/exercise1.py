@@ -163,7 +163,9 @@ def diarist():
             OffCount += 1
         elif "M11 P1" in line:
             OnCount += 1
-    f = open(r"C:\Users\audre\Desktop\CD1161\me\set4", "w+", encoding="utf-8")
+    f = open(
+        r"C:\Users\audre\Desktop\CD1161\me\set4\lasers.pew", "w+", encoding="utf-8"
+    )
     f.write(str(OffCount))
     f.close
     r.close
