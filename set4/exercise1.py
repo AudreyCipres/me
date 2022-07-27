@@ -167,7 +167,6 @@ def diarist():
     f.write(str(OffCount))
     f.close
     r.close
-    pass
 
 
 if __name__ == "__main__":
