@@ -164,10 +164,10 @@ def diarist():
         elif "M11 P1" in line:
             OnCount += 1
     print(f"OnCount: {OnCount}, OffCount: {OffCount}")
-    with open(
+    f = open(
         r"C:\Users\audre\Desktop\CD1161\me\set4", "w+", encoding="utf-8"
-    ) as history_book:
-        history_book.write(str(OffCount))
+    ):
+        f.write(str(OffCount))
     pass
 
 
