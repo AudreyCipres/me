@@ -201,10 +201,10 @@ def loops_5():
     you'll come to see the pros and cons of each over time.
     """
     coord_square = []
-    for j in range(5):
+    for i in range(10):
         coord_row = []
-        for i in range(10):
-            coord_row.append(" (i" + str(i) + ", j" + str(j) + ")")
+        for j in range(5):
+            coord_row.append(f"(i{i}, j{j})")
         coord_square.append(coord_row)
     return coord_square
 
