@@ -94,7 +94,7 @@ def advancedGuessingGame():
             print("Too small, try again")
         else:
             print("Too big, try again")
-    return "wanna play again?"
+    return "You got it!"
     # the tests are looking for the exact string "You got it!". Don't modify that!
 
 

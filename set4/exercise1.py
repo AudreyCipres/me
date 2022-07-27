@@ -155,7 +155,20 @@ def diarist():
 
     NOTE: this function doesn't return anything. It has the _side effect_ of modifying the file system
     """
-    pass
+    r = open("set4/Trispokedovetiles(laser)", "r", encoding="utf-8")
+    OnCount = 0
+    OffCount = 0
+    for line in r.readlines():
+        if "M10 P1" in line:
+            OffCount += 1
+        elif "M11 P1" in line:
+            OnCount += 1
+    print(f"OnCount: {OnCount}, OffCount: {OffCount}")
+    f = open("set4/lasers.pew", "w+", encoding="utf-8")
+    f.write(str(OffCount))
+    f.write(str(OnCount))
+    f.close()
+    r.close()
 
 
 if __name__ == "__main__":
