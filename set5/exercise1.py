@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 
+from re import I
 import requests
 
 """REFACTORING
@@ -47,15 +48,44 @@ def wordy_pyramid():
         else:
             print("failed a request", r.status_code, i)
 
-    return pyramid_list[]
+    return pyramid_list
 
 
 def get_a_word_of_length_n(length):
-    pass
+    baseURL = f"https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={length}"
+    r = requests.get(baseURL)
+    if r.status_code is 200:
+        print(f"{r.text}")
+    else:
+        print("failed a request", r.status_code, length)
+    return None
+
+
+get_a_word_of_length_n(10)
 
 
 def list_of_words_with_lengths(list_of_lengths):
-    pass
+    word_list = []
+    baseURL = f"https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={list_of_lengths}"
+    for i in range(list_of_lengths):
+        r = requests.get(baseURL)
+        if r.status_code is 200:
+            message = r.text
+            word_list.append(message)
+        else:
+            print("failed a request", r.status_code, list_of_lengths)
+    return None
+
+
+# I'm really lost on what to do
+
+
+def example_pyramid():
+    pyramid = []
+    for i in range(10):
+        word = "duck"
+        pyramid.append(word)
+    return pyramid
 
 
 if __name__ == "__main__":
