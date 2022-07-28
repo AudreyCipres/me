@@ -6,4 +6,5 @@ e.g. adding the argument "&wordlength={defined variable for length}" to the end 
 I now know that adding ".append" to a list "[]" just adds whatever variable is defined in the argument brackets afterward based on whether there's a conditioned range.
 e.g.
 pyramid = []
+for i in range(10):
 pyramid.append("hi")
