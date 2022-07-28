@@ -310,7 +310,7 @@
   "7",
   {
     "of_total": 34,
-    "mark": 25,
+    "mark": 28,
     "results": [
       {
         "value": 1,
@@ -405,24 +405,24 @@
         "name": "\nset_it_on_fire:\n    given:    \ud83d\udc96my heart\ud83d\udc96\n    expected: \ud83d\udd25\ud83d\udc96\ud83d\udd25M\ud83d\udd25Y\ud83d\udd25 \ud83d\udd25H\ud83d\udd25E\ud83d\udd25A\ud83d\udd25R\ud83d\udd25T\ud83d\udd25\ud83d\udc96\ud83d\udd25\n    got:      \ud83d\udd25\ud83d\udc96\ud83d\udd25M\ud83d\udd25Y\ud83d\udd25 \ud83d\udd25H\ud83d\udd25E\ud83d\udd25A\ud83d\udd25R\ud83d\udd25T\ud83d\udd25\ud83d\udc96\ud83d\udd25"
       },
       {
-        "value": 0,
-        "name": "\npet_filter:\n    given:    x\n    expected: ['red fox']\n    got:      []"
+        "value": 1,
+        "name": "\npet_filter:\n    given:    x\n    expected: ['red fox']\n    got:      ['red fox']"
       },
       {
         "value": 1,
         "name": "\npet_filter:\n    given:    q\n    expected: []\n    got:      []"
       },
       {
-        "value": 0,
-        "name": "\npet_filter:\n    given:    p\n    expected: ['pig', 'sheep', 'guinea pig', 'python', 'scorpion', 'pigeon', 'alpaca', 'guppy']\n    got:      []"
+        "value": 1,
+        "name": "\npet_filter:\n    given:    p\n    expected: ['pig', 'sheep', 'guinea pig', 'python', 'scorpion', 'pigeon', 'alpaca', 'guppy']\n    got:      ['pig', 'sheep', 'guinea pig', 'python', 'scorpion', 'pigeon', 'alpaca', 'guppy']"
+      },
+      {
+        "value": 1,
+        "name": "\nbest_letter_for_pets:\n    given:    * no args *\n    expected: e\n    got:      e"
       },
       {
         "value": 0,
-        "name": "\nbest_letter_for_pets:\n    given:    * no args *\n    expected: e\n    got:      "
-      },
-      {
-        "value": 0,
-        "name": "\nmake_filler_text_dictionary:\n    given:    * no args *\n    expected: [[3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5], [6, 6, 6, 6], [7, 7, 7, 7]]\n    got:      []"
+        "name": "\nmake_filler_text_dictionary:\n    given:    []\n    expected: [[3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5], [6, 6, 6, 6], [7, 7, 7, 7]]\n    got:      'set' object has no attribute 'keys'"
       },
       {
         "value": 0,
