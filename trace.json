@@ -422,7 +422,7 @@
       },
       {
         "value": 0,
-        "name": "\nmake_filler_text_dictionary:\n    given:    []\n    expected: [[3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5], [6, 6, 6, 6], [7, 7, 7, 7]]\n    got:      'set' object has no attribute 'keys'"
+        "name": "\nmake_filler_text_dictionary:\n    given:    * no args *\n    expected: [[3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5], [6, 6, 6, 6], [7, 7, 7, 7]]\n    got:      []"
       },
       {
         "value": 0,

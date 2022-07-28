@@ -207,7 +207,6 @@ def make_filler_text_dictionary() -> Dict:
             r = requests.get(url)
             w = r.text
             lt.append(j)
-
     return wd
 
 
