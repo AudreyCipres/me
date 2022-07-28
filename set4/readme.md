@@ -8,3 +8,5 @@ e.g.
 pyramid = []
 for i in range(10):
 pyramid.append("hi")
+return pyramid
+^ I think that's how it goes

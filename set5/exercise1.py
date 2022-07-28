@@ -76,16 +76,11 @@ def list_of_words_with_lengths(list_of_lengths):
             print("failed a request", r.status_code, list_of_lengths)
     return None
 
+def rf_attempt():
+    p = get_a_word_of_length_n(
+
 
 # I'm really lost on what to do
-
-
-def example_pyramid():
-    pyramid = []
-    for i in range(10):
-        word = "duck"
-        pyramid.append(word)
-    return pyramid
 
 
 if __name__ == "__main__":
