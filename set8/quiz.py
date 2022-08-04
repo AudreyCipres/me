@@ -34,7 +34,8 @@ def is_it_5(some_number) -> bool:
 
 def take_five(some_number) -> int:
     """Subtracts 5 from some_number."""
-    return None
+    subtract_five = some_number - int(5)
+    return subtract_five
 
 
 def greet(name="Towering Timmy") -> str:
@@ -42,7 +43,7 @@ def greet(name="Towering Timmy") -> str:
     return a string of "Hello " and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
-    return None
+    return f"Hello {name}"
 
 
 def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]) -> int:
