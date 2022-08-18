@@ -77,7 +77,7 @@ def list_of_words_with_lengths(list_of_lengths):
     return None
 
 def rf_attempt():
-    p = get_a_word_of_length_n(
+    p = get_a_word_of_length_n
 
 
 # I'm really lost on what to do
