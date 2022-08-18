@@ -255,7 +255,8 @@ if __name__ == "__main__":
         password_please(),
         type(password_please()) == str,
     )
-    print("int_list_please", int_list_please(), type(int_list_please()) == list)
+    print("int_list_please", int_list_please(),
+          type(int_list_please()) == list)
     print(
         "string_list_please", string_list_please(), type(string_list_please()) == list
     )
