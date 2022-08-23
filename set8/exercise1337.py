@@ -10,7 +10,6 @@ import os
 import random
 import string
 import time
-from numpy import subtract
 import requests
 from typing import Dict, List
 

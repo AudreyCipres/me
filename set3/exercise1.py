@@ -5,13 +5,6 @@ Modify each function until the tests pass.
 """
 
 
-from ast import While
-from email import message
-from re import I
-from matplotlib.pyplot import step
-from openpyxl import load_workbook
-
-
 def loop_ranger(start, stop=None, step=1):
     """Return a list of numbers between start and stop in steps of step.
 
